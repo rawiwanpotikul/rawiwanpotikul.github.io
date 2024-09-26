@@ -235,7 +235,7 @@ nav {
     }
     
     .welcome-text {
-        font-size: 2em; /* ปรับขนาดตัวหนังสือ */
+        font-size: 10px; /* ปรับขนาดตัวหนังสือ */
     }
 
     .menu {
@@ -306,99 +306,6 @@ nav {
     .pc-bar1 {
         margin-bottom: 10px; /* ลดระยะห่างระหว่างแท่งคะแนน */
     }
-}
-
-@media (max-width: 414px) {
-    .welcome {
-        height: 60px; /* ปรับความสูง */
-        font-size: 24px; /* ขนาดฟอนต์ที่เหมาะสม */
-    }
-    
-    .welcome-text {
-        font-size: 1.5em; /* ปรับขนาดตัวหนังสือ */
-    }
-
-    .profile-picture {
-        height: 250px; /* ปรับความสูง */
-    }
-
-    .education-background {
-        height: 300px; /* ปรับความสูง */
-    }
-
-    .education-text {
-        width: 95%; /* เก็บไว้ที่ 95% */
-        padding: 1rem; /* ลดพื้นที่ padding */
-    }
-
-    .aboutcompany {
-        font-size: 12px; /* ลดขนาดฟอนต์ */
-    }
-
-    .internship-picture1,
-    .internship-picture2,
-    .internship-picture3,
-    .internship-picture4,
-    .internship-picture5 {
-        height: 120px; /* ปรับความสูง */
-    }
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-.emoji2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    padding: 0;
-}
-.pc-bar1 {
-    display: flex; /* ใช้ flexbox */
-    align-items: center; /* จัดกลางในแนวตั้ง */
-    width: 100%; /* ความกว้างของแท่ง */
-    background-color: #e0e0e0;
-    border-radius: 20px;
-    overflow: hidden; /* ป้องกันการแสดงส่วนเกิน */
-    position: relative; /* ใช้สำหรับจัดตำแหน่งข้อความ */
-    margin-bottom: 15px;
-}
-.pc-2,
-.pc-4,
-.pc-5,
-.pc-6,
-.pc-10,
-.pc-11,
-.pc-12 {
-    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
-    background-color: #337e67;
-    border-radius: 20px;
-    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
-}
-.pc-1,
-.pc-7,
-.pc-8,
-.pc-13 {
-    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
-    background-color: #2eb69f;
-    border-radius: 20px;
-    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
-}
-.pc-3,
-.pc-9{
-    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
-    background-color: #6d8a85;
-    border-radius: 20px;
-    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
-}
-.pc-text1{
-    padding-top: 2px;
-    position: left ; /* จัดตำแหน่งข้อความให้อยู่กลาง */
-    padding-left: 3rem;
-    color: #fff; /* สีข้อความ */
-    font-weight: bold; /* ทำให้ข้อความหนา */
-    align-items: center;
 }
 & .emoji2 {
     display: inline-block;
