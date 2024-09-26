@@ -310,11 +310,8 @@ nav {
     }
 
     .profile-text {
-        font-size: 16px; /* ปรับขนาดฟอนต์ */
-        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7), 
-        -1px -1px 0px rgba(255, 255, 255, 0.7), 
-        1px -1px 0px rgba(255, 255, 255, 0.7), 
-        -1px 1px 0px rgba(255, 255, 255, 0.7);;
+        font-size: 13px !important; /* ปรับขนาดฟอนต์ */
+
     }
 
     .education-background {
@@ -372,7 +369,45 @@ nav {
         margin-bottom: 10px; /* ลดระยะห่างระหว่างแท่งคะแนน */
     }
 }
+@media (max-width: 400px){
+    .welcome {
+        height: 80px; /* ปรับความสูงให้เล็กลง */
+        font-size: 30px; /* ขนาดฟอนต์ที่เหมาะสม */
+    }
+    
+    .welcome-text {
+        font-size: 10px; /* ปรับขนาดตัวหนังสือ */
+    }
 
+    .menu {
+        flex-direction: column; /* แสดงเป็นคอลัมน์ */
+        height: auto; /* ความสูงยืดหยุ่น */
+    }
+
+    .profile-information {
+        grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
+    }
+
+    .profile-picture {
+        height: 300px; /* ปรับความสูง */
+        background-size: cover; /* ให้ภาพเต็มพื้นที่ */
+    }
+
+    .profile-text {
+        font-size: 13px !important; /* ปรับขนาดฟอนต์ */
+
+    }
+
+    .education-background {
+        height: 400px; /* ปรับความสูง */
+        background-size: cover; /* ปรับขนาดภาพให้เต็มพื้นที่ */
+    }
+    .education-text {
+        width: 80%; 
+        padding: 0rem; /* ลด padding */
+        font-size: 13px; /* ลดขนาดฟอนต์ */
+    }
+}
 body {
     font-family: Arial, sans-serif;
 }
