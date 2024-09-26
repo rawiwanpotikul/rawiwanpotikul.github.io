@@ -109,7 +109,7 @@ nav {
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 18px;
+        font-size: 24px;
         z-index: 1;
         position: relative;
     }
@@ -316,7 +316,7 @@ nav {
     }
 
     .profile-text {
-        font-size: 13px !important; /* ปรับขนาดฟอนต์ */
+        font-size: 13px ; /* ปรับขนาดฟอนต์ */
 
     }
 
@@ -327,7 +327,7 @@ nav {
         margin: 0;
     }
     .education-text {
-        font-size: 1px; !important;
+        font-size: 10px ;
         padding: 10px; /* ปรับ padding */
     }
     .aboutcompany{
@@ -350,7 +350,7 @@ nav {
     .internship-text3,
     .internship-text4,
     .internship-text5 {
-        font-size: 14px; /* ลดขนาดฟอนต์ */
+        font-size: 10px; /* ลดขนาดฟอนต์ */
         height: 200px; /* ทำให้ความสูงยืดหยุ่น */
     }
 
@@ -368,7 +368,7 @@ nav {
     }
 
     .pc-text1 {
-        font-size: 14px; /* ลดขนาดข้อความ */
+        font-size: 8px; /* ลดขนาดข้อความ */
         padding-left: 1rem; /* ลดระยะห่างด้านซ้าย */
     }
 
