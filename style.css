@@ -39,7 +39,8 @@ nav {
 .education,
 .internship,
 .grades,
-.contact {
+.contact,
+.api {
     background-color: #eab595;
     height: 30px;
     color: #fff;
