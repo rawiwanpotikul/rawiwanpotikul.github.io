@@ -92,6 +92,9 @@ nav {
     display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
     justify-content: center; /* จัดกลางแนวนอน */
     align-items: center; /* จัดกลางแนวตั้ง */
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
     }
     & .education-text {
         display: grid;
@@ -106,6 +109,8 @@ nav {
         align-items: center;
         text-align: center;
         font-size: 18px;
+        z-index: 1;
+        position: relative;
     }
 .internship {
         background-color: #eab595;
@@ -317,11 +322,12 @@ nav {
     .education-background {
         height: 400px; /* ปรับความสูง */
         background-size: cover; /* ปรับขนาดภาพให้เต็มพื้นที่ */
+        padding: 0;
+        margin: 0;
     }
     .education-text {
-        width: 80%; 
-        padding: 0rem; /* ลด padding */
-        font-size: 13px; /* ลดขนาดฟอนต์ */
+        font-size: 12px;
+        padding: 10px; /* ปรับ padding */
     }
     .aboutcompany{
         font-size: 13px ;
