@@ -212,6 +212,63 @@ nav {
     text-align: center;
     padding-left: 20px;
 }
+.emoji2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 0;
+}
+.pc-bar1 {
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    width: 100%; /* ความกว้างของแท่ง */
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden; /* ป้องกันการแสดงส่วนเกิน */
+    position: relative; /* ใช้สำหรับจัดตำแหน่งข้อความ */
+    margin-bottom: 15px;
+}
+.pc-2,
+.pc-4,
+.pc-5,
+.pc-6,
+.pc-10,
+.pc-11,
+.pc-12 {
+    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
+    background-color: #337e67;
+    border-radius: 20px;
+    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
+}
+.pc-1,
+.pc-7,
+.pc-8,
+.pc-13 {
+    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
+    background-color: #2eb69f;
+    border-radius: 20px;
+    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
+}
+.pc-3,
+.pc-9{
+    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
+    background-color: #6d8a85;
+    border-radius: 20px;
+    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
+}
+.pc-text1{
+    padding-top: 2px;
+    position: left ; /* จัดตำแหน่งข้อความให้อยู่กลาง */
+    padding-left: 3rem;
+    color: #fff; /* สีข้อความ */
+    font-weight: bold; /* ทำให้ข้อความหนา */
+    align-items: center;
+}
+& .emoji2 {
+    display: inline-block;
+    animation: move 1s infinite alternate;
+}
 @keyframes moveUpDown {
     0% {
         transform: translateY(0);
@@ -260,13 +317,17 @@ nav {
         height: 400px; /* ปรับความสูง */
         background-size: cover; /* ปรับขนาดภาพให้เต็มพื้นที่ */
     }
-
     .education-text {
-        width: 90%; /* เก็บไว้ที่ 90% */
-        padding: 1rem; /* ลด padding */
-        font-size: 14px; /* ลดขนาดฟอนต์ */
+        width: 80%; 
+        padding: 0rem; /* ลด padding */
+        font-size: 13px; /* ลดขนาดฟอนต์ */
     }
-
+    .aboutcompany{
+        font-size: 13px ;
+    }
+    .internship-company{
+        font-size: 10px;
+    }
     .internship1,
     .internship2,
     .internship3,
@@ -282,7 +343,7 @@ nav {
     .internship-text4,
     .internship-text5 {
         font-size: 14px; /* ลดขนาดฟอนต์ */
-        height: auto; /* ทำให้ความสูงยืดหยุ่น */
+        height: 200px; /* ทำให้ความสูงยืดหยุ่น */
     }
 
     .internship-picture1,
@@ -307,7 +368,7 @@ nav {
         margin-bottom: 10px; /* ลดระยะห่างระหว่างแท่งคะแนน */
     }
 }
-& .emoji2 {
-    display: inline-block;
-    animation: move 1s infinite alternate;
+
+body {
+    font-family: Arial, sans-serif;
 }
