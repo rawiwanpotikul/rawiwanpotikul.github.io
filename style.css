@@ -132,7 +132,8 @@ nav {
     padding: 1rem;
     & .aboutcompany{
         color: #642907;
-        font-size: 18px;
+        font-size: 23px;
+        font-weight: bold;
         justify-content: center;     /* จัดกลางในแนวนอน */
         align-items: center;         /* จัดกลางในแนวตั้ง */
         text-align: center;          /* จัดตัวหนังสือให้ตรงกลาง */
@@ -326,12 +327,12 @@ nav {
         padding: 0;
         margin: 0;
     }
-    .education-text {
+    .education-text p {
         font-size: 10px ;
         padding: 1px; /* ปรับ padding */
     }
-    .aboutcompany{
-        font-size: 13px ;
+    .aboutcompany p {
+        font-size: 12px ;
     }
     .internship-company{
         font-size: 10px;
@@ -374,45 +375,6 @@ nav {
 
     .pc-bar1 {
         margin-bottom: 10px; /* ลดระยะห่างระหว่างแท่งคะแนน */
-    }
-}
-@media (max-width: 400px){
-    .welcome {
-        height: 80px; /* ปรับความสูงให้เล็กลง */
-        font-size: 30px; /* ขนาดฟอนต์ที่เหมาะสม */
-    }
-    
-    .welcome-text {
-        font-size: 10px; /* ปรับขนาดตัวหนังสือ */
-    }
-
-    .menu {
-        flex-direction: column; /* แสดงเป็นคอลัมน์ */
-        height: auto; /* ความสูงยืดหยุ่น */
-    }
-
-    .profile-information {
-        grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
-    }
-
-    .profile-picture {
-        height: 300px; /* ปรับความสูง */
-        background-size: cover; /* ให้ภาพเต็มพื้นที่ */
-    }
-
-    .profile-text {
-        font-size: 13px !important; /* ปรับขนาดฟอนต์ */
-
-    }
-
-    .education-background {
-        height: 400px; /* ปรับความสูง */
-        background-size: cover; /* ปรับขนาดภาพให้เต็มพื้นที่ */
-    }
-    .education-text {
-        width: 80%; 
-        padding: 0rem; /* ลด padding */
-        font-size: 13px; /* ลดขนาดฟอนต์ */
     }
 }
 body {
