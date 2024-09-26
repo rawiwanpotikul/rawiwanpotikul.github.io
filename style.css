@@ -35,7 +35,11 @@ nav {
 
     }
 }
-.profile {
+.profile,
+.education,
+.internship,
+.grades,
+.contact {
     background-color: #eab595;
     height: 30px;
     color: #fff;
@@ -71,16 +75,6 @@ nav {
         animation: moveUpDown 1s infinite alternate;
     }
 }
-.education {
-    background-color: #eab595;
-    height: 30px;
-    color: #fff;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-    padding-left: 20px;
-}
 .education-background {
     background-image: url("bg-education2.png") ;
     padding: 0;
@@ -113,16 +107,6 @@ nav {
         z-index: 1;
         position: relative;
     }
-.internship {
-        background-color: #eab595;
-        height: 30px;
-        color: #fff;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        text-align: center;
-        padding-left: 20px;
-}
 .internship-company{
     background-image: url("company1.png");
     height: 300px;
@@ -209,16 +193,6 @@ nav {
         border-radius: 20px;
         border: 2px solid #d87f81;
 }
-.grades {
-    background-color: #eab595;
-    height: 30px;
-    color: #fff;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    text-align: center;
-    padding-left: 20px;
-}
 .emoji2{
     display: flex;
     justify-content: center;
@@ -276,6 +250,7 @@ nav {
     display: inline-block;
     animation: move 1s infinite alternate;
 }
+
 @keyframes moveUpDown {
     0% {
         transform: translateY(0);
@@ -328,7 +303,7 @@ nav {
         margin: 0;
     }
     .education-text p {
-        font-size: 10px ;
+        font-size: 11px ;
         padding: 1px; /* ปรับ padding */
     }
     .aboutcompany p {
