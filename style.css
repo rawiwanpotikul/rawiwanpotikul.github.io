@@ -228,119 +228,45 @@ nav {
         transform: translateX(40px); /* ขยับไปทางขวา */
     }
 }
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .welcome {
-        height: 100px;
-        font-size: 40px;
-    }
-    .welcome-text{
-        font-size: 40px;
-    }
-    .menu {
-        flex-direction: column;
-        height: auto;
-    }
-    .profile-information{
-        grid-template-columns: 1fr;
-    }
-    .profile-picture{
-        height: 400px;
-    }
-    .profile-text{
-        font-size: 18px;
-    }
-    .education{
-        height: auto;
-        padding-left: 10px ;
-    }
-    .education-background{
-        height: 400px;
-    }
-    .education-text {
-        width: 80%; /* ปรับขนาดความกว้างพื้นหลังให้เล็กลง */
-        padding: 2rem; /* ปรับ padding เพื่อลดพื้นที่ */
-        font-size: 16px; /* ลดขนาดฟอนต์ */
-    }
-    .aboutcompany{
-        font-size: 13px;
-    }
-    .internship1,
-    .internship2,
-    .internship3,
-    .internship4,
-    .internship5 {
-        grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
-        padding: 0.5rem; /* ลดพื้นที่ */
-    }
-
-    & .internship-text1,
-    & .internship-text2,
-    & .internship-text3,
-    & .internship-text4,
-    & .internship-text5 {
-        font-size: 13px; /* ลดขนาดฟอนต์ */
-        height: auto; /* ทำให้ความสูงยืดหยุ่น */
-    }
-
-    & .internship-picture1,
-    & .internship-picture2,
-    & .internship-picture3,
-    & .internship-picture4,
-    & .internship-picture5 {
-        background-size: cover; /* ปรับขนาดให้พอดีกับพื้นที่ */
-        height: 200px; /* กำหนดความสูงให้เหมาะสม */
-    }
-    .emoji2 {
-        font-size: 24px; /* ลดขนาดอิโมจิ */
-    }
-
-    .pc-text1 {
-        font-size: 14px; /* ลดขนาดข้อความ */
-        padding-left: 1rem; /* ลดระยะห่างด้านซ้าย */
-    }
-
-    .pc-bar1 {
-        margin-bottom: 10px; /* ลดระยะห่างระหว่างแท่งคะแนน */
+        height: 80px; /* ปรับความสูงให้เล็กลง */
+        font-size: 30px; /* ขนาดฟอนต์ที่เหมาะสม */
     }
     
-}
-@media (max-width: 414px) {
-    .welcome {
-        height: 100px; /* ปรับความสูงให้เล็กลง */
-        font-size: 5px; /* ขนาดฟอนต์ที่เหมาะสม */
+    .welcome-text {
+        font-size: 2em; /* ปรับขนาดตัวหนังสือ */
     }
-    .welcome-text{
-        font-size: 40px;
-    }
+
     .menu {
-        flex-direction: column;
-        height: auto;
+        flex-direction: column; /* แสดงเป็นคอลัมน์ */
+        height: auto; /* ความสูงยืดหยุ่น */
     }
+
     .profile-information {
         grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
     }
+
     .profile-picture {
-        height: 300px; /* ปรับความสูงให้เหมาะสม */
+        height: 300px; /* ปรับความสูง */
+        background-size: cover; /* ให้ภาพเต็มพื้นที่ */
     }
+
     .profile-text {
         font-size: 16px; /* ปรับขนาดฟอนต์ */
     }
-    .education {
-        height: auto;
-        padding-left: 5px; /* ลดการเยื้อง */
-    }
+
     .education-background {
-        height: 300px; /* ปรับความสูง */
+        height: 400px; /* ปรับความสูง */
+        background-size: cover; /* ปรับขนาดภาพให้เต็มพื้นที่ */
     }
+
     .education-text {
         width: 90%; /* เก็บไว้ที่ 90% */
-        padding: 1rem; /* ลดพื้นที่ padding */
-        margin: 14px 0; /* ลด margin */
+        padding: 1rem; /* ลด padding */
+        font-size: 14px; /* ลดขนาดฟอนต์ */
     }
-    .aboutcompany {
-        font-size: 12px; /* ลดขนาดฟอนต์ */
-    }
+
     .internship1,
     .internship2,
     .internship3,
@@ -364,8 +290,57 @@ nav {
     .internship-picture3,
     .internship-picture4,
     .internship-picture5 {
+        height: 150px; /* ปรับความสูง */
         background-size: cover; /* ปรับขนาดให้พอดีกับพื้นที่ */
-        height: 180px; /* ปรับความสูง */
+    }
+
+    .emoji2 {
+        font-size: 24px; /* ลดขนาดอิโมจิ */
+    }
+
+    .pc-text1 {
+        font-size: 14px; /* ลดขนาดข้อความ */
+        padding-left: 1rem; /* ลดระยะห่างด้านซ้าย */
+    }
+
+    .pc-bar1 {
+        margin-bottom: 10px; /* ลดระยะห่างระหว่างแท่งคะแนน */
+    }
+}
+
+@media (max-width: 414px) {
+    .welcome {
+        height: 60px; /* ปรับความสูง */
+        font-size: 24px; /* ขนาดฟอนต์ที่เหมาะสม */
+    }
+    
+    .welcome-text {
+        font-size: 1.5em; /* ปรับขนาดตัวหนังสือ */
+    }
+
+    .profile-picture {
+        height: 250px; /* ปรับความสูง */
+    }
+
+    .education-background {
+        height: 300px; /* ปรับความสูง */
+    }
+
+    .education-text {
+        width: 95%; /* เก็บไว้ที่ 95% */
+        padding: 1rem; /* ลดพื้นที่ padding */
+    }
+
+    .aboutcompany {
+        font-size: 12px; /* ลดขนาดฟอนต์ */
+    }
+
+    .internship-picture1,
+    .internship-picture2,
+    .internship-picture3,
+    .internship-picture4,
+    .internship-picture5 {
+        height: 120px; /* ปรับความสูง */
     }
 }
 
