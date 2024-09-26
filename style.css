@@ -1,0 +1,425 @@
+
+.welcome {
+    background-color: #ae6378;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 6 px;
+}
+.welcome-text h1 {
+    font-size: 3em; /* ปรับขนาดตัวหนังสือ */
+}
+nav {
+    font-size: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #d87f81;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0; /* เพิ่มให้ไม่มี padding */
+    margin: 0; /* เพิ่มให้ไม่มี margin */
+    & li {
+        margin: 0 2rem;
+        & a {
+            color: #fff;
+            text-decoration:none ;
+        }
+
+    }
+}
+.profile {
+    background-color: #eab595;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+}
+.profile-information {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์ */
+    gap: 10px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
+    & .profile-picture {
+        width: auto; /* ใช้ความกว้างทั้งหมด */
+        height: 610px;
+        background-size: cover;
+        background-image: url("profile.png");
+        background-position: center;
+        line-height: 1.6;
+        
+    }
+    & .profile-text {
+        color: #ae6378; /* สีข้อความ */
+        font-family: 'Quicksand';
+        align-self: center; /* จัดตำแหน่งกลางในคอลัมน์ */
+        justify-content: center;
+        text-align: center;
+        font-size:  20px;
+        }
+    & .emoji {
+        display: inline-block;
+        animation: moveUpDown 1s infinite alternate;
+    }
+}
+.education {
+    background-color: #eab595;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+}
+.education-background {
+    background-image: url("bg-education2.png") ;
+    padding: 0;
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
+    justify-content: center; /* จัดกลางแนวนอน */
+    align-items: center; /* จัดกลางแนวตั้ง */
+    }
+    & .education-text {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: rgba(255, 197, 143, 0.836);
+        padding: 3rem;
+        border-radius: 20px;
+        column-gap: 20px;
+        width: 70%;
+        color: #642907;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+    }
+.internship {
+        background-color: #eab595;
+        height: 30px;
+        color: #fff;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+        padding-left: 20px;
+}
+.internship-company{
+    background-image: url("company1.png");
+    height: 300px;
+    width: auto;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    & .aboutcompany{
+        color: #642907;
+        font-size: 18px;
+        justify-content: center;     /* จัดกลางในแนวนอน */
+        align-items: center;         /* จัดกลางในแนวตั้ง */
+        text-align: center;          /* จัดตัวหนังสือให้ตรงกลาง */
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7), 
+                 -1px -1px 0px rgba(255, 255, 255, 0.7), 
+                 1px -1px 0px rgba(255, 255, 255, 0.7), 
+                 -1px 1px 0px rgba(255, 255, 255, 0.7);
+        font-family: 'Arial';
+    }
+}
+.internship1,
+.internship2,
+.internship3,
+.internship4,
+.internship5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 30px;
+    padding: 1rem;
+
+    & .internship-text1,
+      .internship-text2,
+      .internship-text3,
+      .internship-text4,
+      .internship-text5 {
+        background-color: #d87f81;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 20px;
+        column-gap: 20px;
+        height: 500px;
+        font-size: 30px;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        display: flex;
+    }
+    & .internship-picture1 {
+        background-image:url("work1.png") ;
+        background-position: center;
+        background-size: 100%;
+        border-radius: 20px;
+        border: 2px solid #d87f81;
+    }
+
+}
+.internship-picture2{
+        background-image:url("work2.png.JPG") ;
+        background-position: center;
+        background-size: 100%;
+        border-radius: 20px;
+        border: 2px solid #d87f81;
+    }
+.internship-picture3{
+        background-image:url("work3.png") ;
+        background-position: center;
+        background-size: 120%;
+        border-radius: 20px;
+        border: 2px solid #d87f81;
+    }
+.internship-picture4{
+        background-image:url("work4.png") ;
+        background-position: center;
+        background-size: 120%;
+        border-radius: 20px;
+        border: 2px solid #d87f81;
+    }
+.internship-picture5{
+        background-image:url("work5.png") ;
+        background-position: center;
+        background-size: 120%;
+        border-radius: 20px;
+        border: 2px solid #d87f81;
+}
+.grades {
+    background-color: #eab595;
+    height: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    padding-left: 20px;
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+} 
+@keyframes move {
+    0% {
+        transform: translateX(0); /* เริ่มต้นที่ตำแหน่งเริ่มต้น */
+    }
+    100% {
+        transform: translateX(40px); /* ขยับไปทางขวา */
+    }
+}
+
+@media (max-width: 768px){
+    .welcome {
+        height: 100px;
+        font-size: 4px;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .profile-information{
+        grid-template-columns: 1fr;
+    }
+    .profile-picture{
+        height: 400px;
+    }
+    .profile-text{
+        font-size: 18px;
+    }
+    .education{
+        height: auto;
+        padding-left: 10px ;
+    }
+    .education-background{
+        height: 400px;
+    }
+    .education-text {
+        width: 80%; /* ปรับขนาดความกว้างพื้นหลังให้เล็กลง */
+        padding: 2rem; /* ปรับ padding เพื่อลดพื้นที่ */
+        font-size: 16px; /* ลดขนาดฟอนต์ */
+    }
+    .aboutcompany{
+        font-size: 13px;
+    }
+    .internship1,
+    .internship2,
+    .internship3,
+    .internship4,
+    .internship5 {
+        grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
+        padding: 0.5rem; /* ลดพื้นที่ */
+    }
+
+    & .internship-text1,
+    & .internship-text2,
+    & .internship-text3,
+    & .internship-text4,
+    & .internship-text5 {
+        font-size: 13px; /* ลดขนาดฟอนต์ */
+        height: auto; /* ทำให้ความสูงยืดหยุ่น */
+    }
+
+    & .internship-picture1,
+    & .internship-picture2,
+    & .internship-picture3,
+    & .internship-picture4,
+    & .internship-picture5 {
+        background-size: cover; /* ปรับขนาดให้พอดีกับพื้นที่ */
+        height: 200px; /* กำหนดความสูงให้เหมาะสม */
+    }
+    .emoji2 {
+        font-size: 24px; /* ลดขนาดอิโมจิ */
+    }
+
+    .pc-text1 {
+        font-size: 14px; /* ลดขนาดข้อความ */
+        padding-left: 1rem; /* ลดระยะห่างด้านซ้าย */
+    }
+
+    .pc-bar1 {
+        margin-bottom: 10px; /* ลดระยะห่างระหว่างแท่งคะแนน */
+    }
+    
+}
+@media (max-width: 414px) {
+    .welcome {
+        height: 80px; /* ปรับความสูงให้เล็กลง */
+        font-size: 16px; /* ขนาดฟอนต์ที่เหมาะสม */
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .profile-information {
+        grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
+    }
+    .profile-picture {
+        height: 300px; /* ปรับความสูงให้เหมาะสม */
+    }
+    .profile-text {
+        font-size: 16px; /* ปรับขนาดฟอนต์ */
+    }
+    .education {
+        height: auto;
+        padding-left: 5px; /* ลดการเยื้อง */
+    }
+    .education-background {
+        height: 300px; /* ปรับความสูง */
+    }
+    .education-text {
+        width: 90%; /* เก็บไว้ที่ 90% */
+        padding: 1rem; /* ลดพื้นที่ padding */
+        margin: 14px 0; /* ลด margin */
+    }
+    .aboutcompany {
+        font-size: 12px; /* ลดขนาดฟอนต์ */
+    }
+    .internship1,
+    .internship2,
+    .internship3,
+    .internship4,
+    .internship5 {
+        grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
+        padding: 0.5rem; /* ลดพื้นที่ */
+    }
+
+    .internship-text1,
+    .internship-text2,
+    .internship-text3,
+    .internship-text4,
+    .internship-text5 {
+        font-size: 14px; /* ลดขนาดฟอนต์ */
+        height: auto; /* ทำให้ความสูงยืดหยุ่น */
+    }
+
+    .internship-picture1,
+    .internship-picture2,
+    .internship-picture3,
+    .internship-picture4,
+    .internship-picture5 {
+        background-size: cover; /* ปรับขนาดให้พอดีกับพื้นที่ */
+        height: 180px; /* ปรับความสูง */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.emoji2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 0;
+}
+.pc-bar1 {
+    display: flex; /* ใช้ flexbox */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+    width: 100%; /* ความกว้างของแท่ง */
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden; /* ป้องกันการแสดงส่วนเกิน */
+    position: relative; /* ใช้สำหรับจัดตำแหน่งข้อความ */
+    margin-bottom: 15px;
+}
+.pc-2,
+.pc-4,
+.pc-5,
+.pc-6,
+.pc-10,
+.pc-11,
+.pc-12 {
+    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
+    background-color: #337e67;
+    border-radius: 20px;
+    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
+}
+.pc-1,
+.pc-7,
+.pc-8,
+.pc-13 {
+    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
+    background-color: #2eb69f;
+    border-radius: 20px;
+    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
+}
+.pc-3,
+.pc-9{
+    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
+    background-color: #6d8a85;
+    border-radius: 20px;
+    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
+}
+.pc-text1{
+    padding-top: 2px;
+    position: left ; /* จัดตำแหน่งข้อความให้อยู่กลาง */
+    padding-left: 3rem;
+    color: #fff; /* สีข้อความ */
+    font-weight: bold; /* ทำให้ข้อความหนา */
+    align-items: center;
+}
+& .emoji2 {
+    display: inline-block;
+    animation: move 1s infinite alternate;
+}

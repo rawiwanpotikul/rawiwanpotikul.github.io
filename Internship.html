@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawiwam Potikul</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="welcome">
+        <div class="welcome-text">
+            <h1>Welcome to my resume</h1>
+        </div>
+    </section>
+    <nav>
+        <ul class="menu">
+            <li><a href="rawiwan.html#profile">Profile</a></li>
+            <li><a href="Education.html#education">Education</a></li>
+            <li><a href="Internship.html#internship"onclick="scrollToSection('internship')">Internship Experience</a></li>
+            <li><a href="grades.html#grades">Subject scores</a></li>
+            <li><a href="#">Contact Information</a></li>
+        </ul>
+    </nav>
+    <section class="internship" id="internship">
+        <h1>Internship Experience</h1>
+
+     </section>
+     <div class="internship-company">
+        <div class="aboutcompany">
+            <h2>Mektec Manufacturing Corporation. (Thailand) Ltd.</h2>
+            <h2>560 Udoit-Sorayita, Klong-Tik, Bangpa-In</h2>
+            <h2>Phra Nakhon Si Ayutthaya 13160</h2>
+            <h3>
+                "Mektec Manufacturing Corporation (Thailand) Ltd. is involved in the production of flexible printed circuit boards (FPC) and the assembly of flexible printed circuit board assemblies (FPCA), which are widely used in devices such as hard disk drives and automotive systems like brakes. The company is a subsidiary of Nippon Mektron from Japan and plays a significant role in the global electronics supply chain, focusing on manufacturing high-quality electronic components."
+            </h3>
+        </div>
+        
+     </div>
+     <section class="internship1">
+        <div class="internship-text1">
+            <p>Write a PLC (Programmable Logic Controller) program to control a machine to pick up a workpiece and dip it in flex. The objective is to reduce hazards and potential damage that may occur from using humans for this task, and to increase work efficiency, making the process faster and more accurate.</p>
+        </div>
+        <div class="internship-picture1">
+
+        </div>
+     </section>
+     <section class="internship2">
+        <div class="internship-text2">
+            <p>Study the use of PLC in conjunction with robot arms to develop a system with increased stability and accuracy. Fine-tune the program to support multiple models and reduce the working time for changing each model.</p>
+        </div>
+        <div class="internship-picture2">
+
+        </div>
+     </section>
+     <section class="internship3">
+        <div class="internship-text3">
+            <p>Write a program to control a conveyor belt using sensors for detection. When the sensor detects a workpiece, the conveyor belt should stop to allow the operator to inspect the workpiece. When there is no workpiece present, the conveyor belt should automatically resume operation.</p>
+        </div>
+        <div class="internship-picture3">
+
+        </div>
+     </section>
+     <section class="internship4">
+        <div class="internship-text4">
+            <p>I had the opportunity to study basic reading skills, which is a fascinating new knowledge. This is particularly interesting because there has been no instruction in this subject within my field of study, allowing me to learn something new and deepen my understanding in this area in a valuable way.</p>
+        </div>
+        <div class="internship-picture4">
+
+        </div>
+     </section>
+     <section class="internship5">
+        <div class="internship-text5">
+            <p>Study the use of the NEXIV machine, which is a measuring device that utilizes CNC Video technology. It can accurately measure the size and shape of high-density, multi-layer electronic components.</p>
+        </div>
+        <div class="internship-picture5">
+
+        </div>
+     </section>
+     <script>
+        window.onload = function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const section = document.querySelector(hash);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
