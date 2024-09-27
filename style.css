@@ -54,27 +54,33 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์ */
     gap: 10px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
-    & .profile-picture {
-        width: auto; /* ใช้ความกว้างทั้งหมด */
-        height: 610px;
-        background-size: cover;
-        background-image: url("profile.png");
-        background-position: center;
-        line-height: 1.6;
-        
-    }
-    & .profile-text {
-        color: #ae6378; /* สีข้อความ */
-        font-family: 'Quicksand';
-        align-self: center; /* จัดตำแหน่งกลางในคอลัมน์ */
-        justify-content: center;
-        text-align: center;
-        font-size:  20px;
-        }
-    & .emoji {
-        display: inline-block;
-        animation: moveUpDown 1s infinite alternate;
-    }
+}
+
+.slides {
+    width: 100%; /* ใช้ความกว้างทั้งหมด */
+    height: 610px; /* กำหนดความสูงที่ชัดเจน */
+    overflow: hidden; /* ซ่อนเนื้อหาที่เกิน */
+    position: relative; /* สำหรับการจัดการตำแหน่ง */
+}
+
+.slides img {
+    width: 100%; /* ทำให้ภาพเต็มความกว้างของคอนเทนเนอร์ */
+    height: 100%; /* ทำให้ภาพเต็มความสูงของคอนเทนเนอร์ */
+    object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่ */
+}
+
+.profile-text {
+    color: #ae6378; /* สีข้อความ */
+    font-family: 'Quicksand';
+    align-self: center; /* จัดตำแหน่งกลางในคอลัมน์ */
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+.emoji {
+    display: inline-block;
+    animation: moveUpDown 1s infinite alternate;
 }
 .education-background {
     background-image: url("bg-education2.png") ;
