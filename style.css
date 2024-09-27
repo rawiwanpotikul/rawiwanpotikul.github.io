@@ -287,6 +287,7 @@ nav {
         justify-content: center;
         text-align: center;
         margin: 20px 0px;
+        color: #642907;
     }
 
     .api-post-box-name {
@@ -313,9 +314,13 @@ nav {
         margin: 20px 0px;
     }
     .api-table {
-        font-size: 13px;
+        font-size: 18px;
     }
-
+    
+& .emoji3 {
+        display: inline-block;
+        animation: move 1s infinite alternate;
+}
 @keyframes moveUpDown {
     0% {
         transform: translateY(0);
@@ -331,7 +336,9 @@ nav {
     100% {
         transform: translateX(40px); /* ขยับไปทางขวา */
     }
+
 }
+
 @media (max-width: 700px) {
     .welcome {
         height: 80px; /* ปรับความสูงให้เล็กลง */
