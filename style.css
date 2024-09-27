@@ -364,8 +364,8 @@ nav {
         grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
     }
 
-    .profile-picture {
-        height: 300px; /* ปรับความสูง */
+    .slides{
+        height: 450px; /* ปรับความสูง */
         background-size: cover; /* ให้ภาพเต็มพื้นที่ */
     }
 
