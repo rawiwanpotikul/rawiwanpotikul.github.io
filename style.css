@@ -249,28 +249,6 @@ nav {
     display: inline-block;
     animation: move 1s infinite alternate;
 }
-.profile-information {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์ */
-    gap: 10px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
-    & .profile-picture {
-        width: auto; /* ใช้ความกว้างทั้งหมด */
-        height: 610px;
-        background-size: cover;
-        background-image: url("profile.png");
-        background-position: center;
-        line-height: 1.6;
-        
-    }
-    & .profile-text {
-        color: #ae6378; /* สีข้อความ */
-        font-family: 'Quicksand';
-        align-self: center; /* จัดตำแหน่งกลางในคอลัมน์ */
-        justify-content: center;
-        text-align: center;
-        font-size:  20px;
-        }
-}
 @keyframes moveUpDown {
     0% {
         transform: translateY(0);
@@ -386,7 +364,38 @@ nav {
     .pc-bar1 {
         margin-bottom: 10px; /* ลดระยะห่างระหว่างแท่งคะแนน */
     }
+    .contact-block img {
+        width: 100px; /* ขนาดใหม่สำหรับโทรศัพท์ */
+        height: 100px; /* ขนาดใหม่สำหรับโทรศัพท์ */
+    }
+
 }
 body {
     font-family: Arial, sans-serif;
+}
+
+.contact-block img {
+    width: 200px;
+    height:200px;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 1rem;
+    background-color: #d87f809f;
+}
+.contact-block {
+    text-align: center;
+    padding-top: 1rem;
+    background-color: antiquewhite;
+    
+}
+.information-text h3{
+   text-align: center;
+   height: auto;
+   background-color: #eab595;
+   align-items: center;
+   color: #642907;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
 }
