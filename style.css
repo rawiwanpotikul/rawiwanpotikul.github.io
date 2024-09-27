@@ -396,6 +396,9 @@ nav {
         width: 100px; /* ขนาดใหม่สำหรับโทรศัพท์ */
         height: 100px; /* ขนาดใหม่สำหรับโทรศัพท์ */
     }
+    .information-text h3{
+        font-size: 22px;
+    }
 
 }
 body {
