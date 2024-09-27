@@ -24,9 +24,65 @@
         </ul>
     </nav>
     <section class="api" id="api">
-        <h1>Contact Information</h1>
-     </section
+        <h1>API</h1>
+    </section
+    class="under-box-api">
+                <div class="api-table">
+                    <table border="2" width="200">
+                        <tr>
+                            <th>Sensor</th>
+                            <th>Value</th>
+                            <th>Unit</th>
+                        </tr>
+    
+                        <tr>
+                            <th>Timestamp</th>
+                            <th><h1 id="time" ></h1></th>
+                            <th>Second</th>
+                        </tr>
+                        <tr>
+                            <th>Temperature</th>
+                            <th><h1 id="temp"></h1></th>
+                            <th>° C</th>
+                        </tr>
+                        <tr>
+                            <th>Luxsensor</th>
+                            <th><h1 id="lux"></h1></th>
+                            <th>Lux</th>
+                    </tr>
+                    <tr>
+                            <th>Humidity</th>
+                            <th><h1 id="hum"></h1></th>
+                            <th>%RH</th>
+                    </tr>
+                        <tr>
+                            <th>Motion</th>
+                            <th><h1 id="mot"></h1></th>
+                            <th>-</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="api-post">
+                    <form onsubmit="event.preventDefault(); submitData();">
+                        <div class="api-post-box-name">
+                            <p class="text-titlebox">Name : </p>
+                            <input class="box-input-text" type="text" id="studentName" required placeholder="Enter Student Name">
+                        </div>
+                        <div class="api-post-box-id">
+                            <p class="text-titlebox">ID : </p>
+                            <input class="box-input-text" type="text" id="studentId" required placeholder="Enter Student ID">
+                        </div>
+                        <div class="api-post-box-sent">
+                            <input class="box-sent-submit" type="submit">
+                        </div>
+                    </form>
+    
+                </div>
+    </section>
 
 </body>
+
+</html>
 
 </html>
