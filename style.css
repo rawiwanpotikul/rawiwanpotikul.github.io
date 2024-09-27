@@ -261,7 +261,8 @@ nav {
 .contact-block {
     text-align: center;
     padding-top: 1rem;
-    background-color: antiquewhite;
+    background-image: url("3.jpg");
+    
     
 }
 .information-text h3{
