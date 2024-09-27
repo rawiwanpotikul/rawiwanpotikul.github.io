@@ -440,6 +440,9 @@ nav {
     }
     .api-table {
         font-size: 8px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
 }
