@@ -23,7 +23,7 @@
             <li><a href="api.html#api">API</a></li>
         </ul>
     </nav>
-    <section class="api" id="api">
+    <section class="contact" id="contact">
         <h1>Contact Information</h1>
     </section
  
@@ -57,6 +57,18 @@
         <h3>61/1, M.1, Pra Non, Nakhon Luang, Pra NaKhon Si Ayutthaya, 13260</h3>
         <h3>Email: rawiwan.p11@gmail.com</h3>
     </section>
+
+    <script>
+        window.onload = function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const section = document.querySelector(hash);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
 
 </body>
 
