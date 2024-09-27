@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="sensor.js"></script>
     <section class="welcome">
         <div class="welcome-text">
             <h1>Welcome to my resume</h1>
@@ -18,7 +19,7 @@
             <li><a href="index.html#profile">Profile</a></li>
             <li><a href="Education.html#education">Education</a></li>
             <li><a href="Internship.html#internship">Internship Experience</a></li>
-            <li><a href="grades.html#grades"</a>Subject scores</li>
+            <li><a href="grades.html#grades">Subject scores</a></li>
             <li><a href="contact.html#contact">Contact Information</a></li>
             <li><a href="api.html#api"onclick="scrollToSection('api')">API</a></li>
         </ul>
@@ -28,7 +29,7 @@
     </section
     class="under-box-api">
                 <div class="api-table">
-                    <table border="2" width="200">
+                    <table border ="2" width="200">
                         <tr>
                             <th>Sensor</th>
                             <th>Value</th>
@@ -77,8 +78,40 @@
                             <input class="box-sent-submit" type="submit">
                         </div>
                     </form>
-    
                 </div>
+                <script>
+                    async function submitData() {
+                        // รับข้อมูลจากฟอร์ม
+                        const studentId = document.getElementById("studentId").value;
+                        const studentName = document.getElementById("studentName").value;
+                
+                        // สร้างข้อมูลในรูปแบบ JSON
+                        const data = {
+                            id: studentId,
+                            name: studentName
+                        };
+                
+                        // ส่งข้อมูลไปยัง API โดยใช้ fetch
+                        try {
+                            const response = await fetch("https://206.189.146.138/api/students", {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/json"
+                                },
+                                body: JSON.stringify(data)
+                            });
+                
+                            if (response.ok) {
+                                alert("Sendsuccess!");
+                            } else {
+                                alert("Send fail.");
+                            }
+                        } catch (error) {
+                            console.error("Error:", error);
+                            alert("Send fail.");
+                        }
+                    }
+                  </script>
     </section>
 
 </body>
