@@ -278,9 +278,6 @@ nav {
    font-size: 25px;
 
 }
-.under-box-api {
-    background-color: #337e67;
-}
 
 @keyframes moveUpDown {
     0% {
@@ -408,4 +405,43 @@ nav {
 }
 body {
     font-family: Arial, sans-serif;
+    background-color: antiquewhite;
 }
+
+.body-api {
+    background-color: antiquewhite;
+ }
+    & .api-table {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .api-post-box-name {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .api-post-box-id {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    .api-post-box-sent {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px 0px;
+    }
+    .api-table {
+        font-size: 13px;
+    }
