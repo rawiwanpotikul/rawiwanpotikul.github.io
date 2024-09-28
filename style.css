@@ -365,7 +365,7 @@ nav {
     }
 
     .slides{
-        height: 450px; /* ปรับความสูง */
+        height: 400px; /* ปรับความสูง */
         background-size: cover; /* ให้ภาพเต็มพื้นที่ */
     }
 
