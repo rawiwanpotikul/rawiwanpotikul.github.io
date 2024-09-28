@@ -10,7 +10,7 @@
     font-size: 6 px;
 }
 .welcome-text h1 {
-    font-size: 3em; /* ปรับขนาดตัวหนังสือ */
+    font-size:
 }
 nav {
     font-size: 20px;
@@ -24,8 +24,8 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0; /* เพิ่มให้ไม่มี padding */
-    margin: 0; /* เพิ่มให้ไม่มี margin */
+    padding: 0; 
+    margin: 0; 
     & li {
         margin: 0 2rem;
         & a {
@@ -52,27 +52,27 @@ nav {
 }
 .profile-information {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* แบ่งเป็น 2 คอลัมน์ */
-    gap: 10px; /* เพิ่มช่องว่างระหว่างคอลัมน์ */
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
 }
 
 .slides {
-    width: 100%; /* ใช้ความกว้างทั้งหมด */
-    height: 610px; /* กำหนดความสูงที่ชัดเจน */
-    overflow: hidden; /* ซ่อนเนื้อหาที่เกิน */
-    position: relative; /* สำหรับการจัดการตำแหน่ง */
+    width: 100%; 
+    height: 610px; 
+    overflow: hidden; 
+    position: relative; 
 }
 
 .slides img {
-    width: 100%; /* ทำให้ภาพเต็มความกว้างของคอนเทนเนอร์ */
-    height: 100%; /* ทำให้ภาพเต็มความสูงของคอนเทนเนอร์ */
-    object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่ */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 
 .profile-text {
-    color: #ae6378; /* สีข้อความ */
+    color: #ae6378; 
     font-family: 'Quicksand';
-    align-self: center; /* จัดตำแหน่งกลางในคอลัมน์ */
+    align-self: center;
     justify-content: center;
     text-align: center;
     font-size: 20px;
@@ -90,9 +90,9 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex; /* ใช้ flexbox เพื่อจัดตำแหน่ง */
-    justify-content: center; /* จัดกลางแนวนอน */
-    align-items: center; /* จัดกลางแนวตั้ง */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     z-index: 0;
     display: flex;
     flex-direction: column;
@@ -125,9 +125,9 @@ nav {
         color: #642907;
         font-size: 23px;
         font-weight: bold;
-        justify-content: center;     /* จัดกลางในแนวนอน */
-        align-items: center;         /* จัดกลางในแนวตั้ง */
-        text-align: center;          /* จัดตัวหนังสือให้ตรงกลาง */
+        justify-content: center;     
+        align-items: center;         
+        text-align: center;          
         text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.7), 
                  -1px -1px 0px rgba(255, 255, 255, 0.7), 
                  1px -1px 0px rgba(255, 255, 255, 0.7), 
@@ -206,13 +206,13 @@ nav {
     padding: 0;
 }
 .pc-bar1 {
-    display: flex; /* ใช้ flexbox */
-    align-items: center; /* จัดกลางในแนวตั้ง */
-    width: 100%; /* ความกว้างของแท่ง */
+    display: flex; 
+    align-items: center; 
+    width: 100%; 
     background-color: #e0e0e0;
     border-radius: 20px;
-    overflow: hidden; /* ป้องกันการแสดงส่วนเกิน */
-    position: relative; /* ใช้สำหรับจัดตำแหน่งข้อความ */
+    overflow: hidden; 
+    position: relative; 
     margin-bottom: 15px;
 }
 .pc-2,
@@ -222,33 +222,33 @@ nav {
 .pc-10,
 .pc-11,
 .pc-12 {
-    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
+    height: 30px; 
     background-color: #337e67;
     border-radius: 20px;
-    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
+    transition: width 0.5s;
 }
 .pc-1,
 .pc-7,
 .pc-8,
 .pc-13 {
-    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
+    height: 30px; 
     background-color: #2eb69f;
     border-radius: 20px;
-    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
+    transition: width 0.5s; 
 }
 .pc-3,
 .pc-9{
-    height: 30px; /* ความสูงของแถบเปอร์เซ็นต์ */
+    height: 30px;
     background-color: #6d8a85;
     border-radius: 20px;
-    transition: width 0.5s; /* การเปลี่ยนแปลงความกว้าง */
+    transition: width 0.5s; 
 }
 .pc-text1{
     padding-top: 2px;
-    position: left ; /* จัดตำแหน่งข้อความให้อยู่กลาง */
+    position: left ; 
     padding-left: 3rem;
-    color: #fff; /* สีข้อความ */
-    font-weight: bold; /* ทำให้ข้อความหนา */
+    color: #fff;
+    font-weight: bold;
     align-items: center;
 }
 & .emoji2 {
@@ -347,42 +347,41 @@ nav {
 
 @media (max-width: 700px) {
     .welcome {
-        height: 80px; /* ปรับความสูงให้เล็กลง */
-        font-size: 30px; /* ขนาดฟอนต์ที่เหมาะสม */
+        height: 80px; 
+        font-size: 30px;
     }
     
     .welcome-text {
-        font-size: 10px; /* ปรับขนาดตัวหนังสือ */
+        font-size: 10px; 
     }
 
     .menu {
-        flex-direction: column; /* แสดงเป็นคอลัมน์ */
-        height: auto; /* ความสูงยืดหยุ่น */
+        flex-direction: column; 
+        height: auto; 
     }
 
     .profile-information {
-        grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
+        grid-template-columns: 1fr; 
     }
 
     .slides{
-        height: 400px; /* ปรับความสูง */
-        background-size: cover; /* ให้ภาพเต็มพื้นที่ */
+        height: 400px; 
+        background-size: cover; 
     }
 
     .profile-text {
-        font-size: 13px ; /* ปรับขนาดฟอนต์ */
-
+        font-size: 13px ; 
     }
 
     .education-background {
-        height: 400px; /* ปรับความสูง */
-        background-size: cover; /* ปรับขนาดภาพให้เต็มพื้นที่ */
+        height: 400px; 
+        background-size: cover; 
         padding: 0;
         margin: 0;
     }
     .education-text p {
         font-size: 11px ;
-        padding: 1px; /* ปรับ padding */
+        padding: 1px; 
     }
     .internship-company {
         width: auto;
@@ -401,8 +400,8 @@ nav {
     .internship4,
     .internship5 {
         display: grid;
-        grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียว */
-        padding: 0.5rem; /* ลดพื้นที่ */
+        grid-template-columns: 1fr; 
+        padding: 0.5rem; //
         margin-bottom: 0.5rem;
         row-gap: 20px;
     }
@@ -412,8 +411,7 @@ nav {
     .internship-text3 p ,
     .internship-text4 p ,
     .internship-text5 p {
-        font-size: 16px; /* ลดขนาดฟอนต์ */
-        padding: 10px; /* เพิ่มพื้นที่ภายใน */
+        font-size: 16px; /
         height: 200px; 
     }
     .internship-text1,
@@ -428,25 +426,25 @@ nav {
     .internship-picture3,
     .internship-picture4,
     .internship-picture5 {
-        height: 300px; /* ปรับความสูง */
-        background-size: cover; /* ปรับขนาดให้พอดีกับพื้นที่ */
+        height: 300px;
+        background-size: cover; 
     }
 
     .emoji2 {
-        font-size: 24px; /* ลดขนาดอิโมจิ */
+        font-size: 24px;
     }
 
     .pc-text1 {
-        font-size: 8px; /* ลดขนาดข้อความ */
-        padding-left: 1rem; /* ลดระยะห่างด้านซ้าย */
+        font-size: 8px; 
+        padding-left: 1rem; 
     }
 
     .pc-bar1 {
         margin-bottom: 10px; /* ลดระยะห่างระหว่างแท่งคะแนน */
     }
     .contact-block img {
-        width: 100px; /* ขนาดใหม่สำหรับโทรศัพท์ */
-        height: 100px; /* ขนาดใหม่สำหรับโทรศัพท์ */
+        width: 100px; 
+        height: 100px; 
     }
     .information-text h3{
         font-size: 22px;
